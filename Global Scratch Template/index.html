@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="http://www.globalodc.com/GODC%20Images/Global%20Favicon.png">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<title>Global ODC</title>
+		<link rel="stylesheet" href="styles.css">
+		<img src="http://www.globalodc.com/GODC%20Images/artem-sapegin-PoHAyYLpkOM-unsplash.jpg" alt="boston" class="boston">
+		<section class=begin id=begin>
+		<h1 class="head" id="head">Global ODC, Inc.</h1>
+			<h4 class="subhead" id="subhead"> Connect, Leverage, Enhance</h4>
+			
+		</section>
+	</head>
+	<body>
+		<h2 class="arrow" id="arrow"></h2>
+		<h2 class="background"></h2>
+		<div class="wrapper" id="wrapper" style="opacity: 0;">
+			<h2 class="phrase">Taking Your Business to the Next Level</h2>
+			<caption>
+			<img src="http://www.globalodc.com/GODC%20Images/light_bulb%20(1).png" alt="icon" class="consulting">
+			<figcaption class="consultinglabel">Consulting</figcaption>
+			</caption>
+			<p class="consultingpar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Suspendisse potenti nullam ac tortor vitae purus</p>
+			<caption>
+			<img src="http://www.globalodc.com/GODC%20Images/target.png" alt="icon" class="strategy">
+			<figcaption class="strategylabel">Strategy</figcaption>
+			</caption>
+			<p class="strategypar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Suspendisse potenti nullam ac tortor vitae purus</p>
+			<caption>
+			<img src="http://www.globalodc.com/GODC%20Images/stats_column_chart.png" alt="icon" class="businessmodel">
+			<figcaption class="businessmodellabel">Business Model</figcaption>
+			</caption>
+			<p class="businessmodelpar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Suspendisse potenti nullam ac tortor vitae purus</p>
+			<caption>
+			<img src="http://www.globalodc.com/GODC%20Images/organizational_chart.png" alt="icon" class="chart">
+			<figcaption class="processcontinuitylabel">Process Continuity</figcaption>
+			</caption>
+			<p class="chartpar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Suspendisse potenti nullam ac tortor vitae purus</p>
+			<h2><a href="about.html" class="learnmore">Learn More</a></h2>
+		</div>
+		<section>
+			<h2 class="background1"></h2>
+			<h2 class="models">Our Business Process Model</h2>
+			<h3 class="models-subtitle">A quick seemless proccess that fullfills customer needs</h3>
+			<h2 class="modelbox1">Hearing our clients input about their needs and wants</h2>
+			<h2 class="modelbox2">Performing an in-depth search to find consultants that match our clients needs</h2>
+			<h2 class="modelbox3">Provide consultants and other services to clients</h2>
+			<h2 class="modelbox4">Ensure a positive experience for all clients</h2>
+			<h2><a href="offerings.html" class="learnmore1">Read more about our offerings</a></h2>
+		</section>
+		<h2 class="background2"></h2>
+		<div class="first-nav" id="first-nav">
+			<ul class="nav">
+				<li>------</li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Offerings</a></li>
+				<li><a href="#">World wide</a></li>
+			</ul>
+		</div>
+		<h2><a href="#" class="contact" id="contact">Contact Us</a></h2>
+		<a href="index.html"><img src="http://www.globalodc.com/GODC%20Images/favicon.ico1.ico" alt="icon" class="favicon" id="favicon"></a>
+	
+	</body>
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	var counter = 0;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementById("first-nav").style.top = "0";
+			document.getElementById("favicon").style.top = "0.25vw";
+			document.getElementById("contact").style.top = "0.8vw";
+		} else if (prevScrollpos >= 200){
+			document.getElementById("first-nav").style.top = "-60px";
+			document.getElementById("favicon").style.top = "-60px";
+			document.getElementById("contact").style.top = "-60px";
+		}
+		if (prevScrollpos > 200) {
+			document.getElementById("head").style.opacity = "0"; 
+		} 
+		else {
+			document.getElementById("head").style.opacity = "1";
+		}
+		if (prevScrollpos > 200) {
+			document.getElementById("subhead").style.opacity = "0"; 
+		} 
+		else {
+			document.getElementById("subhead").style.opacity = "1";
+		}
+		if (prevScrollpos > 500) {
+			document.getElementById("arrow").style.opacity = "0"; 
+		} 
+		else {
+			document.getElementById("arrow").style.opacity = "1";
+		}
+		if (prevScrollpos > 450) {
+			document.getElementById("wrapper").style.opacity = "1"; 
+		} 
+		prevScrollpos = currentScrollPos;
+	}
+	</script>
+</html>
